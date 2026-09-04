@@ -70,12 +70,12 @@
         }
 
         contactForm.reset();
-        const successMessage = 'Your request has been successfully submitted and the inquiry will be sent to gonzalmq4112@gmail.com.';
+        const successMessage = 'Your request has been successfully submitted.';
         status.textContent = successMessage;
         alert(successMessage);
       } catch (error) {
         status.classList.add('error');
-        status.textContent = 'The form could not submit right now. Please email gonzalmq4112@gmail.com directly.';
+        status.textContent = 'The form could not submit right now. Please try again later.';
       } finally {
         submitButton.disabled = false;
       }
